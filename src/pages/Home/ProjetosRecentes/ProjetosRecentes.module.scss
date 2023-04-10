@@ -1,0 +1,17 @@
+@import "styles/breakpoints";
+@import "styles/variables";
+
+.recentes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    max-width: 1200px;
+    width: 100%;
+    grid-column: 1 / span 8;
+    &__titulo {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        color: $dark;
+    }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+}

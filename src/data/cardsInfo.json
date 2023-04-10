@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Desenvolvimento Front-end",
+      "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "photo": "assets/card__image.jpg",
+      "id": 1,
+      "category": {
+        "id": 1,
+        "label": "Frontend"
+      }
+    },
+    {
+      "title": "Projeto de Identidade Visual",
+      "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "photo": "assets/card__image.jpg",
+      "id": 2,
+      "category": {
+        "id": 2,
+        "label": "Branding"
+      }
+    },
+    {
+      "title": "Desenvolvimento Front-end",
+      "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "photo": "assets/card__image.jpg",
+      "id": 3,
+      "category": {
+        "id": 3,
+        "label": "Interface"
+      }
+    }
+  ]

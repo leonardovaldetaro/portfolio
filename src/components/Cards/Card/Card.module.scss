@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+@import "../../../styles/breakpoints";
+
+.card {
+    background-color: $wite;
+    color: $dark;
+    box-shadow: 1px 1px 5px $shadow;
+    max-width: 265px;
+    border-radius: 4px;
+    &__img {
+        margin-bottom: .5em;
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+    &__title {
+        margin: .5em;
+    }
+    &__descricao {
+        margin: .5em;
+        color: $dark;
+    }
+    &__tag {
+        margin-left: .5em;
+        padding: .3em .5em;
+        display: flex;
+        width: fit-content;
+        border-radius: 5px;
+        font-size: .8em;
+        &__frontend {
+            background-color: $blue;
+            color: $wite;
+        }
+        &__branding {
+            background-color: $orange;
+            color: $wite;
+        }
+        &__interface {
+            background-color: $yelow;
+            color: $wite;
+        }
+    }
+}

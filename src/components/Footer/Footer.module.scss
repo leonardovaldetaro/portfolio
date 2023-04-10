@@ -1,0 +1,23 @@
+@import "styles/breakpoints";
+@import "styles/variables";
+
+.footer {
+	background-color: rgb(32,50,62);
+	padding: .5rem 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 2em;
+    }
+    &__title {
+        color: $light-grey;
+        font-size: .7rem;
+    }
+    &__copyright {
+        color: $light-grey;
+        font-size: .7rem;
+    }
+}
