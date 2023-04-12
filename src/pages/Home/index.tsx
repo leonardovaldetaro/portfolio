@@ -1,6 +1,7 @@
 import Styles from './Home.module.scss';
 import ImageTopo from 'assets/imagem-principal-cover.jpg';
 import ProjetosRecentes from './ProjetosRecentes';
+import Carrossel from 'components/carrossel';
 
 export default function Home () {
     return (
