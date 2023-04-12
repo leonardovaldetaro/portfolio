@@ -1,6 +1,5 @@
 import Styles from './Home.module.scss';
 import ImageTopo from 'assets/imagem-principal-cover.jpg';
-import ProjetosRecentes from './ProjetosRecentes';
 import Carrossel from 'components/carrossel';
 
 export default function Home () {
@@ -17,7 +16,8 @@ export default function Home () {
                 </div>
                 <img src={ImageTopo} alt="imagem topo" className={Styles.home__img} />
                 <div className={Styles.home__divider}></div>
-                <ProjetosRecentes />
+                <><h2 className={Styles.recentes__titulo}>Projetos Recentes</h2></>
+                <Carrossel />
             </section>
         </>
     );

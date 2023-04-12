@@ -1,31 +1,19 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Pagination, Navigation } from "swiper";
+import  "react-responsive-carousel/lib/styles/carousel.min.css";
+import  {  Carousel  }  from  'react-responsive-carousel' ;
+import Styles from './Carrossel.module.scss';
+import CardsInfo from 'data/cardsInfo.json';
+import Card from "components/Cards/Card";
+
 
 export default function Carrossel () {
     return (
-        <>
-            <Swiper 
-                className='swiper-container'
-                modules={[ Pagination, Navigation ]}
-                navigation={true}
-                pagination={{clickable:true}}
-            >
-                <SwiperSlide className='swiper-item'>
-                    Slide 1
-                </SwiperSlide>
-                <SwiperSlide className='swiper-item'>
-                    Slide 2
-                </SwiperSlide>
-                <SwiperSlide className='swiper-item'>
-                    Slide 3
-                </SwiperSlide>
-                <SwiperSlide className='swiper-item'>
-                    Slide 4
-                </SwiperSlide>
-            </Swiper>
-        </>
+        <Carousel>
+            {CardsInfo.map(item => (
+                <Card 
+                    key={item.id}
+                    {...item}
+                />
+            ))}
+        </Carousel>
     );
 }
